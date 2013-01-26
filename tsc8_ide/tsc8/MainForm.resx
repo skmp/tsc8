@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>;this is a comment
+;The assembler supports single line comments with ; symblic definitions
+;with equ (ie, MYX equ 8 MYX equ r1, etc).The cpu has 16 regs, r0 is reserved for
+;assembler usage and it should be avoided (i use it here to fit the code in 256 bytes)
+;r6(aka rx) and r7(aka ry) are the x and y coords for the draw command.The rest
+;are free to use.The cpu only supports single parameters per opcode but the assembler
+;will properly handle intel-like syntax (by adding moves when needed)
+;
+;opcodes:
+;mov rd,rs/imm/label
+;add rd,rs/imm
+;sub rd,rs/imm
+;neg rd,rs
+;jz rt,rs/label
+;jgtz rt,rs/label
+;jmp rs/label
+;vsync
+;draw rx,ry,rc
+;getkey rd,key#
+;
+
+_brick_lines_ equ 5
+_bricks_per_line_ equ 11
+_brick_count_ equ 55
+
+_racket_start_x_ equ 12
+_bullet_start_x_ equ 27
+_bullet_start_speed_x_ equ 255
+_bullet_start_speed_y_ equ 255
+
+_player_lifes_ equ 3
+
+;r11 : racket x pos (0 .. 60)
+mov r11,_racket_start_x_
+  
+GameStart:
+  
+  mov ry,5
+  mov r9,_brick_count_ ;brick count
+  mov r3,_brick_lines_ ;draw lines
+  loop_table:
+    mov rx,5
+    mov r1,_bricks_per_line_  ;draw 11 'bricks'
+    loop_line:
+      mov r2,4      ;draw 4 solid pixels
+      loop_solid:    
+        draw rx,ry,1
+        add rx,1
+        sub r2,1
+      jgtz r2,loop_solid
+      draw rx,ry,0  ;draw a black pixel 
+      add rx,1
+      sub r1,1
+    jgtz r1,loop_line    ;loop all over til line is finished
+  add ry,3
+  sub r3,1
+  jgtz r3,loop_table    ;loop all over til table is finished
+  
+  
+  ;r10 : lifes remaining
+  mov r10,_player_lifes_
+  ;r9  : Bricks remaining  
+  
+  GameRound:
+  ;r2,r3 bullet speed
+  ;r4,r5 bullet pos
+  
+  mov r4,_bullet_start_x_
+  mov r5,28
+  mov r2,_bullet_start_speed_x_
+  mov r3,_bullet_start_speed_y_
+  
+  ;r1,rx(6),ry(7),r8,r12,r13,r14,r15 : temp
+  ;r0:reserved
+  
+  mainloop:
+  
+    mov ry,29
+    mov rx,r11
+    mov r1,7 
+    hide_player:
+       draw rx,ry,0
+       add rx,1
+       sub r1,1
+    jgtz r1,hide_player
+    
+    getkey r12,1
+    sub r11,r12
+    sub r11,r12
+  
+    getkey r12,2
+    add r11,r12
+    add r11,r12
+    
+    
+    mov rx,r11
+    mov r1,7 
+    show_player:
+       draw rx,ry,1
+       add rx,1
+       sub r1,1
+    jgtz r1,show_player
+    
+  
+    mov rx,r4
+    mov ry,r5
+    draw rx,ry,0
+    
+    ;movement step
+    move_step:
+    ;corners: ==0 || ==max
+    
+    jz r4,x_corner
+    neg r1,r4
+    add r1,63
+    jgtz r1,x_no_corner
+    x_corner:
+    neg r2,r2
+    x_no_corner:
+    
+    jz r5,y_corner
+    neg r1,r5
+    add r1,31
+    jgtz r1,y_no_corner
+    sub r10,1
+    jz r10,GameStart
+    jgtz r10,GameRound
+    y_corner:
+    neg r3,r3
+    y_no_corner:
+    
+    add r4,r2
+    add r5,r3
+    
+    mov rx,r4
+    mov ry,r5
+    draw rx,ry,1
+    mov r1,r0
+    
+    jz r1,no_problem  
+      
+      sub r4,r2
+      sub r5,r3
+         
+      sub rx,r2
+      draw rx,ry,1
+      mov r1,r0
+      mov r8,r0
+      draw rx,ry,r0
+      add rx,r2
+      
+      jz r1,not_y
+      neg r3,r3
+      not_y:
+      
+      sub ry,r3
+      draw rx,ry,1
+      mov r1,r0
+      add r8,r1
+      mov r0,r1
+      draw rx,ry,r0
+      add ry,r3
+      
+      jz r1,not_x
+      neg r2,r2
+      not_x:
+      
+      jgtz r8,not_full
+        neg r2,r2
+        neg r3,r3
+      not_full:
+      
+      ;rx,ry contain problematic pixel
+      
+      sub ry,29
+      
+      jz ry,was_racket
+        add ry,29
+        
+        ;delete all pixels on left of rx
+        _next_left:
+        sub rx,1
+        draw rx,ry,0
+        mov r1,r0
+        jgtz r1,_next_left
+        
+        ;find first right set pixel
+        _find_right:
+        add rx,1
+        draw rx,ry,0
+        mov r1,r0
+        jz r1,_find_right
+        
+        ;delete all pixels on right of rx
+        _next_right:
+        add rx,1
+        draw rx,ry,0
+        mov r1,r0
+        jgtz r1,_next_right
+        
+        sub r9,1  ;decrease brick
+        jz r9,GameStart ;if game ended, restart ;)
+        
+      was_racket:
+    
+      jmp move_step
+    no_problem:
+    
+    vsync
+  jmp mainloop
+</value>
+  </data>
+  <metadata name="EmuTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
